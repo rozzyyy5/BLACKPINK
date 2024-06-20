@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="main">
+        <div class="player-container">
+            <h1>Most Popular Songs</h1>
+            
+            <h2 id="trackTitle"></h2>
+            <audio id="audio" controls>
+                <source id="audioSource" src="" type="audio/mp3">
+            </audio>
+
+            <div class="buttons">
+                <button onclick="playPrevious()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/318/318477.png" alt="">
+                </button>
+                <button onclick="togglePlayPause()">
+                    <img id="playImg" src="https://static.vecteezy.com/system/resources/previews/009/992/357/large_2x/pause-icon-sign-symbol-design-free-png.png" alt="">
+                </button>
+                <button onclick="playNext()">
+                    <img src="https://cdn-icons-png.flaticon.com/512/181/181669.png" alt="">
+                </button>
+            </div>
+
+            <div class="playlist">
+                <ol id="playlist">
+                    <li class="playlist-music" id="Ddu-Du Ddu-Du" onclick="playMusic('Ddu-Du Ddu-Du')"><a href="./music/BLACKPINK  DDU-DU DDU-DU.mp3" style="pointer-events: none">Ddu-Du Ddu-Du</a></li>
+
+                    <li class="playlist-music" id="Kill This Love" onclick="playMusic('Kill This Love')"><a href="./music/BLACKPINK - Kill This Love.mp3" style="pointer-events: none">Kill This Love</a></li>
+
+                    <li class="playlist-music" id="How You Like That" onclick="playMusic('How You Like That')"><a href="./music/BLACKPINK How You Like That.mp3" style="pointer-events: none">How You Like That</a></li>
+
+                    <li class="playlist-music" id="Boombayah" onclick="playMusic('Boombayah')"><a href="./music/BLACKPINK  Boombayah.mp3" style="pointer-events: none">Boombayah</a></li>
+
+                    <li class="playlist-music" id="Lovesick Girls" onclick="playMusic('Lovesick Girls')"><a href="./music/BLACKPINK Lovesick Girls.mp3" style="pointer-events: none">Lovesick Girls</a></li>
+
+                    <li class="playlist-music" id="As If Its Your Last" onclick="playMusic('As If Its Your Last')"><a href="./music/BLACKPINK - AS IF IT'S YOUR LAST.mp3" style="pointer-events: none">As If Its Your Last</a></li>
+
+                    <li class="playlist-music" id="Playing With Fire" onclick="playMusic('Playing With Fire')"><a href="./music/BLACKPINK - PLAYING WITH FIRE.mp3" style="pointer-events: none">Playing With Fire</a></li>
+
+                    <li class="playlist-music" id="Whistle" onclick="playMusic('Whistle')"><a href="./music/BLACKPINK - Whistle.mp3" style="pointer-events: none">Whistle</a></li>
+
+                    <li class="playlist-music" id="Forever Young" onclick="playMusic('Forever Young')"><a href="./music/BLACKPINK - Forever Young.mp3" style="pointer-events: none">Forever Young</a></li>
+
+                     <li class="playlist-music" id="Pretty Savage" onclick="playMusic('Pretty Savage')"><a href="./music/BLACKPINK Pretty Savage.mp3" style="pointer-events: none">Pretty Savage</a></li>
+
+                </ol>
+            </div>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
